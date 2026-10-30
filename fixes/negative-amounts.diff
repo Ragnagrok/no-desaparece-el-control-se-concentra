@@ -1,0 +1,13 @@
+--- a/src/Money.php
++++ b/src/Money.php
+@@ -35,8 +35,8 @@
+         $parts = array_map(fn ($w) => intdiv($this->cents * $w, $total), $weights);
+         // What was lost to rounding is handed out one cent at a time.
+         $left = $this->cents - array_sum($parts);
+-        for ($i = 0; $i < $left; $i++) {
+-            $parts[$i]++;
++        for ($i = 0; $i < abs($left); $i++) {
++            $parts[$i] += $left <=> 0;
+         }
+         return array_map(fn ($c) => new self($c, $this->currency), $parts);
+     }
