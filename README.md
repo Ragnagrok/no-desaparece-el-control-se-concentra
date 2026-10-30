@@ -1,8 +1,8 @@
 # Control Doesn't Go Away, It Concentrates
 
 Proof of concept for the article *Control Doesn't Go Away, It Concentrates*
-([English](https://blog.ragnagrok.com/en/2026-11-04-no-desaparece-el-control-se-concentra) ·
-[español](https://blog.ragnagrok.com/es/2026-11-04-no-desaparece-el-control-se-concentra)):
+([English](https://blog.ragnagrok.com/en/2026-10-30-no-desaparece-el-control-se-concentra) ·
+[español](https://blog.ragnagrok.com/es/2026-10-30-no-desaparece-el-control-se-concentra)):
 a `Money` type in PHP with an `allocate` operation, a law written in a comment, and a property
 test that shows the comment was lying.
 
